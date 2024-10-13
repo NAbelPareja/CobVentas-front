@@ -3,20 +3,16 @@ import { Component } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-products',
   standalone: true,
   imports: [RouterOutlet, RouterLink, CommonModule],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  templateUrl: './products.component.html',
+  styleUrl: './products.component.css'
 })
-export class AppComponent {
+export class ProductsComponent {
   menuOption: string = ''
 
   onOption(menuOption: string){
     this.menuOption = menuOption
   }
 }
-
-
-
-

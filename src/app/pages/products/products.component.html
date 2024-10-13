@@ -1,0 +1,30 @@
+<div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+    
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <button type="button" class="btn btn-primary"  routerLink="parches" [ngClass]="{active: menuOption == 'products-parches'}" (click)="onOption('products-parches')" >Parches</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-primary"  routerLink="pegamentos" [ngClass]="{active: menuOption == 'products-pegamentos'}" (click)="onOption('products-pegamentos')" >Pegamentos</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-primary"  routerLink="pesas" [ngClass]="{active: menuOption == 'products-pesas'}" (click)="onOption('products-pesas')" >Pesas</button>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+</div>
+<router-outlet></router-outlet>
+
+
+ 
+  
